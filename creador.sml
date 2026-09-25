@@ -20,13 +20,6 @@ in
         texto
 end;
 
-(* Objetivo: Verificar si todos los caracteres de un texto son digitos.
-Entrada: Un texto de tipo string.
-Salida: true si es numerico; false en caso contrario.
-*)
-fun esNumerotexto texto =
-    List.all Char.isDigit (String.explode texto);
-
 (* Objetivo: Leer el codigo de un libro.
 Entrada: El codigo escrito por el usuario.
 Salida: El codigo como string.

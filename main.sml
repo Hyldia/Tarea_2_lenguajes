@@ -34,11 +34,11 @@ fun menuPrincipal() = let
     val _ = print "----------------------------------------------\n"
     val _ = print "Selecciones una opcion: "
 
-    val opcion =limpiar(valOf(TextIO.inputLine TextIO.stdIn))
+    val opcion = limpiar(valOf(TextIO.inputLine TextIO.stdIn))
 in
     case opcion of
         "1" => (menuCreador(); menuPrincipal())
-        |"2" => print "\nFuncionalidad no implementada todavia\n"
+        |"2" => (analizarArchivo(); menuPrincipal())
         | "3" => print "\nPrograma finalizado"
         | _ => (print "\nOpcion invalida\n"; menuPrincipal())
 end;
